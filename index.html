@@ -52,10 +52,10 @@
   <body>
     <header><h1 id="ant">Anthony Harold</h1></header>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
+      <a href="#ant">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
     <main>
       <section id="about">
@@ -77,36 +77,38 @@
       <section id="contact">
         <h2>Contact Me</h2>
         <section id="links">
-          <a href="">
+          <a href="https://www.github.com">
             <i class="fa-brands fa-github-alt fa-xl" style="color: #9d9db8"></i>
             Github
           </a>
-          <a href="">
+          <a href="https://www.instagram.com">
             <i class="fa-brands fa-instagram fa-xl" style="color: #9d9db8"></i>
             Instagram
           </a>
-          <a href="">
+          <a href="https://www.twitter.com">
             <i
               class="fa-brands fa-square-twitter fa-xl"
               style="color: #9d9db8"
             ></i>
             Twitter
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com">
             <i class="fa-brands fa-linkedin fa-xl" style="color: #9d9db8"></i>
             Linkedin
           </a>
         </section>
         <form action="#">
             <p class="white">Send Message</p>
-            <input type="text" name="username" id="name" class="block" placeholder="User Name">
-            <input type="email" name="email" id="mail" class="block" placeholder="E-Mail">
-            <textarea name="message" id="msg"  class="block txt" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" class="block" value="SEND">
+            <input type="text" name="username" id="name" class="block" placeholder="User Name" required>
+            <input type="email" name="email" id="mail" class="block" placeholder="E-Mail" required>
+            <textarea name="message" id="msg"  class="block txt" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <!-- <input type="submit" class="block white button" value="SEND"> -->
+            <button type="submit" class="block white button">SEND</button>
         </form>
       </section>
       <footer>
         <!-- top button area -->
+        <a href="#ant" class="top"><i class="fa-solid fa-circle-up fa-xl white"></i></a>
       </footer>
     </main>
   </body>

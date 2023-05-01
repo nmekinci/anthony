@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: rgba(19, 30, 37, 0.8);
   font-family: "Times New Roman", Times, serif;
@@ -42,7 +45,7 @@ nav a:hover {
   font-family: "Rampart One", cursive;
   color: white;
   font-size: 36px;
-  margin-top: 150px;
+  margin: 150px 0;
   padding: 0 100px;
 }
 
@@ -78,27 +81,60 @@ section h2 {
 #links a:hover{
     color: rgb(157, 157, 184);
 }
-form{
-  
-}
+
 .block {
   display: block;
   margin: 10px auto;
-  width: 300px;
+  width: 50%;
   height: 50px;
   text-align: center;
   border-radius: 5px;
   font-size: 18px;
   font-family: Helvetica, Arial, sans-serif;
   background-color: rgba(19, 30, 37, 0.8);
-  border: 2px solid rgb(210, 180, 140);;
+  border: 2px solid rgb(210, 180, 140);
+  outline: 0;
+}
+.block:focus{
+  color: white;
+  border: 2px solid rgb(190, 49, 91);
+  /* outline: red solid 2px; */
+  
 }
 .txt{
   padding-top: 20px;
   height: 150px;
+  resize: vertical;
 }
 p{
   font-size: 20px;
+}
+.button {
+  background-color:rgba(210, 180, 140,0.6);
+  font-size: 24px;
+  font-weight: bolder;
+  cursor:pointer;
+  transition: 0.8s ease;
+}
+.button:hover::after{
+  content: "🎈";
+  font-size: 30px;
+  
+}
+.button:hover{
+  color: aqua;
+  opacity: 0.3;
+}
+footer{
+  text-align: right;
+  margin-bottom: 25px;
+}
+.top{
+  margin-right: 25px;
+  font-size: xx-large;
+}
+.top i:hover{
+  color: bisque;
 }
 
 
